@@ -13,13 +13,19 @@
 <body>
 
     <div id="sidebar">
-        <div id="profile">
-            <img src="profile-picture.jpg" alt="Profile Picture" style="width: 80px; height: 80px; border-radius: 50%;">
-            <h2>Username</h2>
-            <button><a href="/account/login.html"> Sign Out </a></button>
+        <div id="profile-container">
+            <div id="profile-picture-container">
+                <img id="profile-pic" src="/Login-Signup/Images/twitter-logo.png" alt="Profile Picture">
+            </div>
+            <div id="username-container">
+                <h2> Your Username </h2>
+            </div>
+            <div id="sign-out-container">    
+                <button id="sign-out-button"><a href="/Login-Signup/login.html"> Sign Out </a></button>
+            </div>
         </div>
       
-        <div id="users">
+        <div id="users-container">
             <h2>Users List</h2>
             <!-- Potential User API Here -->
             <ul>
@@ -29,7 +35,7 @@
             </ul>
         </div>
     
-        <div id="trending">
+        <div id="trending-container">
             <h2>Trending</h2>
             <!-- Potential Hashtags API Here -->
             <ul>
@@ -44,18 +50,20 @@
         <div>
             <ul id="desktop-header">
                 <li><a href="/account/login.html">Your Post</a></li>
-                <li><a href="#logo">Logo</a></li>
+                <li><a href="/eHit/home.html"><img class="website-logo" src="/Login-Signup/Images/twitter-logo.png" alt="website-logo"></a></li>
                 <li><a href="#following">Following</a></li>
             </ul>
         </div>
-        <div id="search">
-            <div>
-                <input id="search-bar">
+        <div id="myPosts">
+            <div class="create-post-container">
+                <input id="my-post-text" type="text" placeholder="What is happening?!">
+            </div>
+            <div class="post-button-container">
+                <button id="my-post-button">Post</button>
             </div>
         </div>
-        <div id="posts">
-            
-            aaaaaaaaaaaaaaaaaaaaaaaaaa
+        <div id="otherPosts">
+            FOLLOW USERS TO SEE WHAT THEY ARE POSTING
         </div>
     </div>
 
