@@ -1,17 +1,17 @@
-function login() {
+function register() {
     // Getting user input
-    let userEmail = document.getElementById('userEmail').value
+    let username = document.getElementById('userName').value
     let password = document.getElementById('password').value
 
     // Checking:
-    console.log(userEmail)
+    console.log(username)
     console.log(password)
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({
-    "username": userEmail,
+    "username": username,
     "password": password
     });
 
@@ -22,7 +22,7 @@ function login() {
     redirect: 'follow'
     };
 
-    fetch("http://localhost:3000/api/v1/auth/login", requestOptions)
+    fetch("http://localhost:3000/api/v1/auth/register", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
